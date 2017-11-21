@@ -339,44 +339,38 @@
   		margin: 0px auto;
   		color: rgb(136,136,136);
   		font-size: 11px;
+  		line-height: 22px;
+  	}
+  	
+  	#content-link-nav {
+  		height: 22px;
+  	}
+  	
+  	.content-link-description {
+  		display: inline-block;
+  		line-height: 22px;
+  		padding-top: 15px;
   	}
   	
   	.footer-nav {
-  		display: inline-block;
-  		margin-left: 30px;
-  		height: 22px;
-  		margin-top: 2px;
-  	}
-  	
-  	#content-link-nav span{
+  		display: block;
   		line-height: 22px;
+  		margin-top: 5px;
   	}
   	
-  	.footer-nav  {
+  	.footer-nav ul {
   		display: inline-block;
   	}
   	
-  	.content-copyright li {
-  		text-align: center;
+  	.footer-nav li {
   		float: left;
-  		width: 65px;
-  		border-right: 1px solid rgb(214, 214, 214) ;
-  		font-size: 11px;
-  		margin: 0px auto;
   		line-height: 22px;
   	}
   	
-  	.content-copyright a {
-  		color: rgb(51, 51, 51);
+  	.footer-link a{
+  		color: rgb(153, 153, 153);;
   	}
   	
-  	.footer-link {
-  		margin-top: 10px;
-  	}
-  	
-  	.footer-link a {
-  		color: rgb(136,136,136);
-  	}
   </style>
 </head>
 <body>
@@ -563,7 +557,20 @@
 			</div>
 			<div class="content-copyright">
 				<div id="content-link-nav">
-					<div class="footer-nav"><span>Copyright © 2017 Apple Inc. 保留所有权利。</span></div>
+					<div class="footer-nav">
+						Copyright © 2017 Apple Inc. 保留所有权利。
+						<ul>
+							<li><a href="">隐私政策</a></li>
+							<li><a href="">使用条款</a></li>
+							<li><a href="">销售政策</a></li>
+							<li><a href="">法律信息</a></li>
+							<li><a href="">网站地图</a></li>
+						</ul>
+					</div>
+					<div class="footer-link"><span>京公安网安备 11010502008968 <a href="">京ICP备10214630</a></span></div>
+				</div>
+				<!--<div id="content-link-nav">
+					<div class="footer-nav"><span></span></div>
 					<div class="footer-nav">
 						<ul>
 							<li><a href="">隐私政策</a></li>
@@ -574,7 +581,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="footer-link"><span>京公安网安备 11010502008968 <a href="">京ICP备10214630</a></span></div>
+				
 			</div>
 		</div>
 </body>
