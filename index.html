@@ -21,7 +21,7 @@
   		background-color: #444;
   	}
   	
-  	.header_adv .content {
+  	.header_adv .adv_content {
   		width: 976px;
   		height: 40px;
   		font-size: 12px;
@@ -30,7 +30,7 @@
   		line-height: 40px;
   	}
   	
-  	.header_adv .content span {
+  	.header_adv .adv_content span {
   		float: right;
   	}
   	
@@ -356,15 +356,31 @@
   		display: block;
   		line-height: 22px;
   		margin-top: 5px;
+  		height: 22px;
+  	}
+  	
+  	.footer-nav div {
+  		float: left;
   	}
   	
   	.footer-nav ul {
-  		display: inline-block;
+  		display: block;
+  		float: left;
+  		margin-left: 20px;
   	}
   	
   	.footer-nav li {
   		float: left;
   		line-height: 22px;
+  		width: 65px;
+  		border-right: 1px solid rgb(214, 214, 214);
+  		text-align: center;
+  	}
+  	
+  	.footer-nav li a {
+  		color: rgb(51, 51, 51);
+  		width: 52px;
+  		
   	}
   	
   	.footer-link a{
@@ -380,7 +396,7 @@
 	<div id="header">
 		<!--广告区域-->
 		<div class="header_adv">
-			<div class="content">
+			<div class="adv_content">
 				<span><广告></span>
 			</div>
 		</div>
@@ -558,7 +574,7 @@
 			<div class="content-copyright">
 				<div id="content-link-nav">
 					<div class="footer-nav">
-						Copyright © 2017 Apple Inc. 保留所有权利。
+						<div><span>Copyright © 2017 Apple Inc. 保留所有权利。</span></div>
 						<ul>
 							<li><a href="">隐私政策</a></li>
 							<li><a href="">使用条款</a></li>
@@ -569,7 +585,9 @@
 					</div>
 					<div class="footer-link"><span>京公安网安备 11010502008968 <a href="">京ICP备10214630</a></span></div>
 				</div>
-				<!--<div id="content-link-nav">
+				<!--
+					注意：火狐浏览器无法识别使用 inline-block的，会有高度值偏差，需要我们注意
+					<div id="content-link-nav">
 					<div class="footer-nav"><span></span></div>
 					<div class="footer-nav">
 						<ul>
