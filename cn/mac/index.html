@@ -27,16 +27,44 @@
 			background-color: rgb(45,45,45);
 		}
 		
-		#header_mac_nav_content_list ul{
-			width: 100%;
-			text-align: center;
+		.header_mac_nav_content {
+			width: auto;
 			height: 80px;
-			margin: 0px auto;
+			text-align: center;
 		}
 		
-		#header_mac_nav_content_list li{
-			float: left;
+		.header_mac_nav_content_list {
+			width: 100%;
+			height: 110px;
+			padding-top: 15px;
+			text-align: center;
+			margin-left: 25%;
 		}
+		
+		.header_mac_nav_content_list  li {
+			margin-left: 30px;
+			float: left;
+			text-align: center;
+		}
+		
+		.header_mac_nav_content_list  li:hover {
+			color: rgb(102, 187, 255);
+		}
+		
+		.header_mac_nav_content_list  li img{
+			display: block;
+			margin-bottom: 5px;
+		}
+		
+		.header_mac_nav_content_list a{
+			color: white;
+			font-size: 11px;
+			font-weight: bold;
+			font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;;
+		}
+		
+		
+		
 		
 	</style>
 </head>
@@ -66,19 +94,24 @@
 		</div>
 		<div class="header_mac_nav">
 			<div class="header_mac_nav_content">
-				<ul id="header_mac_nav_content_list">
-					<li><img src="img/macbook.svg"/></li>
-					<li><img src="img/macbookair.svg"/></li>
-					<li><img src="img/macbookpro.svg"/></li>
-					<li><img src="img/imac.svg"/></li>
-					<li><img src="img/imacpro.svg"/></li>
-					<li><img src="img/macpro.svg"/></li>
-					<li><img src="img/macmini.svg"/></li>
-					<li><img src="img/peijian.svg"/></li>
-					<li><img src="img/highsierra.svg"/></li>
-					<li><img src="img/compare.svg"/></li>
+				<ul class="header_mac_nav_content_list">
+					<a href=""><li><img src="img/macbook.svg"/>MacBook</li></a>
+					<a href=""><li><img src="img/macbookair.svg"/>MacBook Air</li></a>
+					<a href=""><li><img src="img/macbookpro.svg"/>MacBook Pro</li></a>
+					<a href=""><li><img src="img/imac.svg"/>iMac</li></a>
+					<a href=""><li><img src="img/imacpro.svg"/>iMac Pro</li></a>
+					<a href=""><li><img src="img/macpro.svg"/>Mac Pro</li></a>
+					<a href=""><li><img src="img/macmini.svg"/>Mac mini</li></a>
+					<a href=""><li><img src="img/peijian.svg"/>配件</li></a>
+					<a href=""><li><img src="img/highsierra.svg"/>High Sierra</li></a>
+					<a href=""><li><img src="img/compare.svg"/>机型比较</li></a>
 				</ul>
 			</div>
+			<div class="header_mac_nav_content_description">
+				<ul>
+					<li></li>
+				</ul>
+			</div>			
 		</div>
 	</div>
 </body>
