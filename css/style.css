@@ -103,8 +103,55 @@
   		opacity: 0.7;
   	}
   	
+	.footer {
+  		margin-top: 15px;
+  		height: 397px;
+  		width: 100%;
+  		background-color: rgb(242,242,242);
+  	}
   	
-  #footer-xuangou {
+  	.footer .li-content {
+  		list-style: none;
+  	}
+  	
+  	.footer a {
+  		text-decoration: none;
+  	}
+  	
+  	.footer a:hover {
+  		text-decoration: underline;
+  	}
+  	
+  	.list {
+  		width: 176px;
+  		height: auto;
+  		float: left;
+  		margin-left: 10px;
+  	}
+  	
+  	.content {
+  		padding-top: 40px;
+  		margin: 0px auto;
+  		width: 980px;
+  		height: 234px;
+  	}
+  	
+  	.li-header {
+  		font-size: 11px;
+  		color: rgb(51,51,51);
+  		font-weight: bold;
+  	}
+  	
+  	.li-content {
+  		display: block;
+  	}
+  	
+  	.li-content a{
+  		font-size: 11px;
+  		color: rgb(51,51,51);
+  	}
+  	
+  	#footer-xuangou {
   		margin-left: 0px;
   	}
   	
@@ -197,4 +244,3 @@
   	.footer-link a{
   		color: rgb(153, 153, 153);;
   	}
-
