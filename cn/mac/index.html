@@ -914,7 +914,18 @@
 		
 		
 		/*修改内容*/
+		var content_h2 = [ "iMovie", "GarageBand", "Pages", "Numbers", "Keynote", "Safari"];
+		var content_h5 = [
+						"能让你日益庞大的照片图库变得井井有条，并易于查看。还能帮助你美化图像，创作精彩照片。更有 iCloud 照片图库，让你可以将值得长久珍藏的照片和视频保存在云端。",
+						"以前所未有的方式讲述精彩故事。精简的设计与直观的剪辑功能，让你轻松制作精美的 4K 影片和颇具好莱坞风格的预告片。你还可以通过 iMovie Theater 在各种设备上欣赏这些作品。",
+		];
 		var content = document.getElementsByClassName("internal_app_show_app_content");
+		var list = document.getElementsByClassName("internal_app_show_a");
+		for ( var i = 0; i < list.length; i++ ) {
+			if ( list[i].isVisible()) {
+
+			}
+		}
 		alert(content.length);
 		content[0].innerHTML = "<h2>iMovie</h2><h5>以前所未有的方式讲述精彩故事。精简的设计与直观的剪辑功能，让你轻松制作精美的 4K 影片和颇具好莱坞风格的预告片。你还可以通过 iMovie Theater 在各种设备上欣赏这些作品。</h5><a href=''>进一步了解 > </a>";
 		content[0].innerHTML = "<h2>GarageBand</h2><h5>在 Mac 上制作绝妙旋律，简单到离谱。它拥有直观的界面，以及一套完整的声音资源库，让你能够如专业制作人一般学习、演奏、录制和共享乐曲，一切就这么简单轻松。</h5><a href=''>进一步了解 > </a>";
