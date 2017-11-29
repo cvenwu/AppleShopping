@@ -915,9 +915,11 @@
 		
 		/*修改内容*/
 		var content = document.getElementsByClassName("internal_app_show_app_content");
-		for ( var i = 0; i < content.length; i++) {
-			
-		}
+		alert(content.length);
+		content[0].innerHTML = "<h2>照片</h2>
+				<h5>能让你日益庞大的照片图库变得井井有条，并易于查看。还能帮助你美化图像，创作精彩照片。更有 iCloud 照片图库，让你可以将值得长久珍藏的照片和视频保存在云端。</h5>
+				<a href="">进一步了解 > </a>";
+		alert(content[0].innerHTML);
 	}
 </script>
 </html>
