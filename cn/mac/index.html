@@ -921,8 +921,8 @@
 	
 	function tab_check(j) {
 		
-		document.getElementsByClassName("internal_app_show_li").(j).style.borderBottomStyle = "solid 1px black";
-		
+		document.getElementsByClassName("internal_app_show_li")[j].style.borderBottomStyle = "solid 1px black";
+		alert(document.getElementsByClassName("internal_app_show_li")[j].style.borderBottomColor);
 		/*修改内容*/
 		var content_h2 = [ 
 			"照片",
