@@ -920,8 +920,6 @@
 	
 	
 	function tab_check(j) {
-		
-		alert(j);
 		/*修改内容*/
 		var content_h2 = [ 
 			"照片",
@@ -955,9 +953,16 @@
 		var content = document.getElementsByClassName("internal_app_show_app_content");
 		/*获取链接长度*/
 		var list = document.getElementsByClassName("internal_app_show_a");
+		/*修改图片路径*/
+		var img_src = document.getElementsByClassName("internal_app_show_app_pic_img2");
+		
 		for ( var i = 0; i < content.length; i++ ) {
+			alert(j);
+			alert(i);
 			if (i == j) {
+				alert("相等");
 				content[j].innerHTML = "<h2>" + content_h2[j] + "</h2><h5>" + content_h5[j] + "</h5><a href=''>进一步了解 > </a>";
+				img_src.style.backgroundImage = conent_img2[j];
 				alert(content[j].innerHTML);
 			}
 		}
