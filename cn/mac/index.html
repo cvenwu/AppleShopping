@@ -759,19 +759,19 @@
 		<h5>每台 Mac 都内置了众多激发创意、提升效率的 app。这些功能强大的工具能助你来探索、交流、高效工<br />作。访问<a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewGrouping?id=&mt=12&ls=1" id="MacAppStore">Mac App Store</a> ，更有成百上千款 app 等你发现。</h5>
 		<div class="internal_app_show">
 			<ul>
-				<li id="internal_app_show_li_first" style="margin-left: 0px;"><a href="" class="internal_app_show_a"><img src="img/nav_icon_photos_large.jpg"/>照片</a></li>
+				<li id="internal_app_show_li_first" style="margin-left: 0px;"><a href="javascript:void(0)" class="internal_app_show_a" onclick="tab_check(0)"><img src="img/nav_icon_photos_large.jpg"/>照片</a></li>
 				<li class="internal_app_show_t"></li>
-				<li><a href="" class="internal_app_show_a"><img src="img/nav_icon_imovie_large.jpg" alt="" />iMovie</a></li>
+				<li><a href="javascript:void(0)" class="internal_app_show_a" onclick="tab_check(1)"><img src="img/nav_icon_imovie_large.jpg" alt="" />iMovie</a></li>
 				<li class="internal_app_show_t"></li>
-				<li><a href="" class="internal_app_show_a"><img src="img/nav_icon_garageband_large.jpg"/>GarageBand</a></li>
+				<li><a href="javascript:void(0)" class="internal_app_show_a" onclick="tab_check(2)"><img src="img/nav_icon_garageband_large.jpg"/>GarageBand</a></li>
 				<li class="internal_app_show_t"></li>
-				<li><a href="" class="internal_app_show_a"><img src="img/nav_icon_pages_large.jpg"/>Pages</a></li>
+				<li><a href="javascript:void(0)" class="internal_app_show_a" onclick="tab_check(3)"><img src="img/nav_icon_pages_large.jpg"/>Pages</a></li>
 				<li class="internal_app_show_t"></li>
-				<li><a href="" class="internal_app_show_a"><img src="img/nav_icon_numbers_large.jpg" alt="" />Numbers</a></li>
+				<li><a href="javascript:void(0)" class="internal_app_show_a" onclick="tab_check(4)"><img src="img/nav_icon_numbers_large.jpg" alt="" />Numbers</a></li>
 				<li class="internal_app_show_t"></li>
-				<li><a href="" class="internal_app_show_a"><img src="img/nav_icon_keynote_large.jpg"/>Keynote</a></li>
+				<li><a href="javascript:void(0)" class="internal_app_show_a" onclick="tab_check(5)"><img src="img/nav_icon_keynote_large.jpg"/>Keynote</a></li>
 				<li class="internal_app_show_t"></li>
-				<li><a href="" class="internal_app_show_a"><img src="img/nav_icon_safari_large.jpg"/>Safari</a></li>
+				<li><a href="javascript:void(0)" class="internal_app_show_a" onclick="tab_check(6)"><img src="img/nav_icon_safari_large.jpg"/>Safari</a></li>
 			</ul>
 		</div>
 		<div class="internal_app_show_app">
@@ -919,25 +919,27 @@
 	
 	
 	
-	function tab_check() {
+	function tab_check(j) {
+		
+		alert(j);
 		/*修改内容*/
 		var content_h2 = [ 
-						"照片",
-						"iMovie", 
-						"GarageBand", 
-						"Pages",
-						"Numbers", 
-						"Keynote", 
-						"Safari"
+			"照片",
+			"iMovie", 
+			"GarageBand", 
+			"Pages",
+			"Numbers", 
+			"Keynote", 
+			"Safari"
 		];
 		var content_h5 = [
-						"能让你日益庞大的照片图库变得井井有条，并易于查看。还能帮助你美化图像，创作精彩照片。更有 iCloud 照片图库，让你可以将值得长久珍藏的照片和视频保存在云端。",
-						"以前所未有的方式讲述精彩故事。精简的设计与直观的剪辑功能，让你轻松制作精美的 4K 影片和颇具好莱坞风格的预告片。你还可以通过 iMovie Theater 在各种设备上欣赏这些作品。",
-						"在 Mac 上制作绝妙旋律，简单到离谱。它拥有直观的界面，以及一套完整的声音资源库，让你能够如专业制作人一般学习、演奏、录制和共享乐曲，一切就这么简单轻松。",
-						"这款功能强大的文字处理软件，能满足你的各种所需，令制作出的文档看起来漂亮，读起来也漂亮。你可在 Mac 和 iOS 设备之间无缝切换，还可与使用 Microsoft Word 的其他人轻松协作。",
-						"创建精密的电子表格，添加引人注目的交互式图表、表格和图像，让你的数据生动显现。你可在 Mac 和 iOS 设备之间无缝切换，还可与使用 Microsoft Excel 的其他人轻松协作。",
-						"通过赏心悦目的演示文稿，让你的想法得以生动呈现。运用多种强大工具和炫目效果，让你的观众目不转睛。你可在 Mac 和 iOS 设备之间无缝切换，还可与使用 Microsoft PowerPoint 的其他人轻松协作。",
-						"Safari 的各种创新功能让你尽享网络的更多精彩。节能技术让你上网浏览的时间更长，内置隐私功能比以往更为强大，你可以在各种设备之间无缝切换浏览，还可以轻松分享你喜爱的页面。"
+			"能让你日益庞大的照片图库变得井井有条，并易于查看。还能帮助你美化图像，创作精彩照片。更有 iCloud 照片图库，让你可以将值得长久珍藏的照片和视频保存在云端。",
+			"以前所未有的方式讲述精彩故事。精简的设计与直观的剪辑功能，让你轻松制作精美的 4K 影片和颇具好莱坞风格的预告片。你还可以通过 iMovie Theater 在各种设备上欣赏这些作品。",
+			"在 Mac 上制作绝妙旋律，简单到离谱。它拥有直观的界面，以及一套完整的声音资源库，让你能够如专业制作人一般学习、演奏、录制和共享乐曲，一切就这么简单轻松。",
+			"这款功能强大的文字处理软件，能满足你的各种所需，令制作出的文档看起来漂亮，读起来也漂亮。你可在 Mac 和 iOS 设备之间无缝切换，还可与使用 Microsoft Word 的其他人轻松协作。",
+			"创建精密的电子表格，添加引人注目的交互式图表、表格和图像，让你的数据生动显现。你可在 Mac 和 iOS 设备之间无缝切换，还可与使用 Microsoft Excel 的其他人轻松协作。",
+			"通过赏心悦目的演示文稿，让你的想法得以生动呈现。运用多种强大工具和炫目效果，让你的观众目不转睛。你可在 Mac 和 iOS 设备之间无缝切换，还可与使用 Microsoft PowerPoint 的其他人轻松协作。",
+			"Safari 的各种创新功能让你尽享网络的更多精彩。节能技术让你上网浏览的时间更长，内置隐私功能比以往更为强大，你可以在各种设备之间无缝切换浏览，还可以轻松分享你喜爱的页面。"
 		];
 		var conent_img2 = [
 			"img/bia_photos_large.jpg",
@@ -949,24 +951,23 @@
 			"img/bia_safari_large.jpg"
 		];
 	
-	
 		/*获取数组列表的长度*/
 		var content = document.getElementsByClassName("internal_app_show_app_content");
 		/*获取链接长度*/
 		var list = document.getElementsByClassName("internal_app_show_a");
 		for ( var i = 0; i < content.length; i++ ) {
-			if ( ) {
-
+			if (i == j) {
+				content[j].innerHTML = "<h2>" + content_h2[j] + "</h2><h5>" + content_h5[j] + "</h5><a href=''>进一步了解 > </a>";
+				alert(content[j].innerHTML);
 			}
 		}
-		alert(content.length);
-		content[0].innerHTML = "<h2>iMovie</h2><h5>以前所未有的方式讲述精彩故事。精简的设计与直观的剪辑功能，让你轻松制作精美的 4K 影片和颇具好莱坞风格的预告片。你还可以通过 iMovie Theater 在各种设备上欣赏这些作品。</h5><a href=''>进一步了解 > </a>";
+		/*
 		content[0].innerHTML = "<h2>GarageBand</h2><h5>在 Mac 上制作绝妙旋律，简单到离谱。它拥有直观的界面，以及一套完整的声音资源库，让你能够如专业制作人一般学习、演奏、录制和共享乐曲，一切就这么简单轻松。</h5><a href=''>进一步了解 > </a>";
 		content[0].innerHTML = "<h2>Pages</h2><h5>这款功能强大的文字处理软件，能满足你的各种所需，令制作出的文档看起来漂亮，读起来也漂亮。你可在 Mac 和 iOS 设备之间无缝切换，还可与使用 Microsoft Word 的其他人轻松协作。</h5><a href=''>进一步了解 > </a>";
 		content[0].innerHTML = "<h2>Numbers</h2><h5>创建精密的电子表格，添加引人注目的交互式图表、表格和图像，让你的数据生动显现。你可在 Mac 和 iOS 设备之间无缝切换，还可与使用 Microsoft Excel 的其他人轻松协作。</h5><a href=''>进一步了解 > </a>";
 		content[0].innerHTML = "<h2>Keynote</h2><h5>通过赏心悦目的演示文稿，让你的想法得以生动呈现。运用多种强大工具和炫目效果，让你的观众目不转睛。你可在 Mac 和 iOS 设备之间无缝切换，还可与使用 Microsoft PowerPoint 的其他人轻松协作。</h5><a href=''>进一步了解 > </a>";
 		content[0].innerHTML = "<h2>Safari</h2><h5>Safari 的各种创新功能让你尽享网络的更多精彩。节能技术让你上网浏览的时间更长，内置隐私功能比以往更为强大，你可以在各种设备之间无缝切换浏览，还可以轻松分享你喜爱的页面。</h5><a href=''>进一步了解 > </a>";
-		
+		*/
 	}
 	
 	
