@@ -921,7 +921,7 @@
 	
 	function tab_check(j) {
 		
-		document.getElementsByClassName("internal_app_show_li")[j].style.borderBottomStyle = "solid 1px black";
+		
 		alert(document.getElementsByClassName("internal_app_show_li")[j].style.borderBottomColor);
 		/*修改内容*/
 		var content_h2 = [ 
@@ -965,9 +965,11 @@
 			if (i == j) {
 				alert("相等");
 				content[0].innerHTML = "<h2>" + content_h2[j+1] + "</h2><h5>" + content_h5[j] + "</h5><a href=''>进一步了解 > </a>";
-				
 			}
+			document.getElementsByClassName("internal_app_show_li")[i].style.borderBottom = "solid 1px rgb(214, 214, 214)";
 		}
+		
+		document.getElementsByClassName("internal_app_show_li")[j].style.borderBottom = "solid 1px black";
 		/*
 		content[0].innerHTML = "<h2>GarageBand</h2><h5>在 Mac 上制作绝妙旋律，简单到离谱。它拥有直观的界面，以及一套完整的声音资源库，让你能够如专业制作人一般学习、演奏、录制和共享乐曲，一切就这么简单轻松。</h5><a href=''>进一步了解 > </a>";
 		content[0].innerHTML = "<h2>Pages</h2><h5>这款功能强大的文字处理软件，能满足你的各种所需，令制作出的文档看起来漂亮，读起来也漂亮。你可在 Mac 和 iOS 设备之间无缝切换，还可与使用 Microsoft Word 的其他人轻松协作。</h5><a href=''>进一步了解 > </a>";
