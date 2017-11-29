@@ -465,13 +465,12 @@
 			border-bottom: solid rgb(214, 214, 214) 1px;
 		}
 		
-		.internal_app_show li:hover{
-			color: #0070c9;
+		.internal_app_show li:fir {
+			border-bottom-color: red;
 		}
 		
 		.internal_app_show_t {
 			width: 40px!important;
-			border-bottom: 1px solid red;
 		}
 		
 		.internal_app_show img {
@@ -542,7 +541,13 @@
 			font-size: 16px;
 		}
 		
+		.internal_app_show a:hover {
+			color: rgb(0, 112, 201);
+		}
 		
+		#internal_app_show_li_first {
+			border-bottom-color: black;
+		}
 		
 		.professional_app {
 			width: 1350px;
@@ -754,7 +759,7 @@
 		<h5>每台 Mac 都内置了众多激发创意、提升效率的 app。这些功能强大的工具能助你来探索、交流、高效工<br />作。访问<a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewGrouping?id=&mt=12&ls=1" id="MacAppStore">Mac App Store</a> ，更有成百上千款 app 等你发现。</h5>
 		<div class="internal_app_show">
 			<ul>
-				<li style="margin-left: 0px;"><a href=""><img src="img/nav_icon_photos_large.jpg"/>照片</a></li>
+				<li id="internal_app_show_li_first" style="margin-left: 0px;"><a href=""><img src="img/nav_icon_photos_large.jpg"/>照片</a></li>
 				<li class="internal_app_show_t"></li>
 				<li><a href=""><img src="img/nav_icon_imovie_large.jpg" alt="" />iMovie</a></li>
 				<li class="internal_app_show_t"></li>
