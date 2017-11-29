@@ -759,19 +759,19 @@
 		<h5>每台 Mac 都内置了众多激发创意、提升效率的 app。这些功能强大的工具能助你来探索、交流、高效工<br />作。访问<a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewGrouping?id=&mt=12&ls=1" id="MacAppStore">Mac App Store</a> ，更有成百上千款 app 等你发现。</h5>
 		<div class="internal_app_show">
 			<ul>
-				<li id="internal_app_show_li_first" style="margin-left: 0px;"><a href="javascript:void(0)" class="internal_app_show_a" onclick="tab_check(0)"><img src="img/nav_icon_photos_large.jpg"/>照片</a></li>
+				<li id="internal_app_show_li_first" class="internal_app_show_li" style="margin-left: 0px;"><a href="javascript:void(0)" class="internal_app_show_a" onclick="tab_check(0)"><img src="img/nav_icon_photos_large.jpg"/>照片</a></li>
 				<li class="internal_app_show_t"></li>
-				<li><a href="javascript:void(0)" class="internal_app_show_a" onclick="tab_check(1)"><img src="img/nav_icon_imovie_large.jpg" alt="" />iMovie</a></li>
+				<li class="internal_app_show_li"><a href="javascript:void(0)" class="internal_app_show_a" onclick="tab_check(1)"><img src="img/nav_icon_imovie_large.jpg" alt="" />iMovie</a></li>
 				<li class="internal_app_show_t"></li>
-				<li><a href="javascript:void(0)" class="internal_app_show_a" onclick="tab_check(2)"><img src="img/nav_icon_garageband_large.jpg"/>GarageBand</a></li>
+				<li class="internal_app_show_li"><a href="javascript:void(0)" class="internal_app_show_a" onclick="tab_check(2)"><img src="img/nav_icon_garageband_large.jpg"/>GarageBand</a></li>
 				<li class="internal_app_show_t"></li>
-				<li><a href="javascript:void(0)" class="internal_app_show_a" onclick="tab_check(3)"><img src="img/nav_icon_pages_large.jpg"/>Pages</a></li>
+				<li class="internal_app_show_li"><a href="javascript:void(0)" class="internal_app_show_a" onclick="tab_check(3)"><img src="img/nav_icon_pages_large.jpg"/>Pages</a></li>
 				<li class="internal_app_show_t"></li>
-				<li><a href="javascript:void(0)" class="internal_app_show_a" onclick="tab_check(4)"><img src="img/nav_icon_numbers_large.jpg" alt="" />Numbers</a></li>
+				<li class="internal_app_show_li"><a href="javascript:void(0)" class="internal_app_show_a" onclick="tab_check(4)"><img src="img/nav_icon_numbers_large.jpg" alt="" />Numbers</a></li>
 				<li class="internal_app_show_t"></li>
-				<li><a href="javascript:void(0)" class="internal_app_show_a" onclick="tab_check(5)"><img src="img/nav_icon_keynote_large.jpg"/>Keynote</a></li>
+				<li class="internal_app_show_li"><a href="javascript:void(0)" class="internal_app_show_a" onclick="tab_check(5)"><img src="img/nav_icon_keynote_large.jpg"/>Keynote</a></li>
 				<li class="internal_app_show_t"></li>
-				<li><a href="javascript:void(0)" class="internal_app_show_a" onclick="tab_check(6)"><img src="img/nav_icon_safari_large.jpg"/>Safari</a></li>
+				<li class="internal_app_show_li"><a href="javascript:void(0)" class="internal_app_show_a" onclick="tab_check(6)"><img src="img/nav_icon_safari_large.jpg"/>Safari</a></li>
 			</ul>
 		</div>
 		<div class="internal_app_show_app">
@@ -920,6 +920,9 @@
 	
 	
 	function tab_check(j) {
+		
+		document.getElementsByClassName("internal_app_show_li").(j).style.borderBottomStyle = "solid 1px black";
+		
 		/*修改内容*/
 		var content_h2 = [ 
 			"照片",
@@ -956,14 +959,13 @@
 		/*修改图片路径*/
 		var img_src = document.getElementsByClassName("internal_app_show_app_pic_img2");
 		
-		for ( var i = 0; i < content.length; i++ ) {
+		for ( var i = 0; i < content.length; i++) {
 			alert(j);
 			alert(i);
 			if (i == j) {
 				alert("相等");
-				content[j].innerHTML = "<h2>" + content_h2[j] + "</h2><h5>" + content_h5[j] + "</h5><a href=''>进一步了解 > </a>";
-				img_src.style.backgroundImage = conent_img2[j];
-				alert(content[j].innerHTML);
+				content[0].innerHTML = "<h2>" + content_h2[j+1] + "</h2><h5>" + content_h5[j] + "</h5><a href=''>进一步了解 > </a>";
+				
 			}
 		}
 		/*
